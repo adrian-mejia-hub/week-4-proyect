@@ -1,0 +1,1 @@
+{"version":3,"file":"customer.model.d.ts","sourceRoot":"","sources":["../../src/models/customer.model.ts"],"names":[],"mappings":"AAEA,eAAO,MAAM,eAAe,sBAG3B,CAAC;AAEF,eAAO,MAAM,eAAe,GAAU,IAAI,MAAM,iBAG/C,CAAC;AAEF,eAAO,MAAM,cAAc,GAAU,MAAM,MAAM,EAAE,OAAO,MAAM,EAAE,OAAO,MAAM,iBAM9E,CAAC;AAEF,eAAO,MAAM,cAAc,GAAU,IAAI,MAAM,EAAE,MAAM,MAAM,EAAE,OAAO,MAAM,EAAE,OAAO,MAAM,iBAM1F,CAAC"}
