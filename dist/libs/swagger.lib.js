@@ -9,7 +9,7 @@ const doc = {
     schemes: ['http'],
 };
 const outputFile = 'swagger-output.json';
-const endpointsFiles = ['./src/index.ts', './src/routes/product.routes.ts'];
+const endpointsFiles = ['./src/index.ts', './src/routes/product.routes.ts', './src/routes/customer.routes.ts'];
 swaggerAutogen()(outputFile, endpointsFiles, doc).then(async () => {
     await import('../index.js');
 });

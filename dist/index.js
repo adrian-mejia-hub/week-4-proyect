@@ -1,6 +1,7 @@
 import express, {} from "express";
 import swaggerRouter from "./routes/swagger.router.js";
 import productRoutes from "./routes/product.routes.js";
+import customerRoutes from "./routes/customer.routes.js";
 import cors from "cors";
 import pool from "./config/db.js";
 const port = process.env.PORT || 3000;
@@ -10,6 +11,7 @@ app.use(express.json());
 app.use(cors());
 app.use("/api/docs", swaggerRouter);
 app.use("/api", productRoutes);
+app.use("/api", customerRoutes);
 app.get("/", (req, res) => {
     /*#swagger.tags = ['Tests']*/
     res.json({
