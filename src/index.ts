@@ -1,5 +1,6 @@
 import express, { type Request, type Response } from "express"; 
 import swaggerRouter from "./routes/swagger.router.js";
+import productRoutes from "./routes/product.routes.js";
 import cors from "cors";
 import pool from "./config/db.js";
 
@@ -12,6 +13,7 @@ app.use(express.json());
 app.use(cors());
 
 app.use("/api/docs", swaggerRouter);
+app.use("/api", productRoutes);
 
 app.get("/", (req: Request, res: Response) => {
     /*#swagger.tags = ['Tests']*/
